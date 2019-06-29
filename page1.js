@@ -9,25 +9,25 @@ function run() {
     // const btnLogout = document.getElementById("btnLogout");
 
 $(document).ready(function(){
-    const firebaseConfig = {
-        apiKey: "AIzaSyBNjPHaWRz4JKP1ILu0W5ytx2SNSDaDrTo",
-        authDomain: "web-hw4-94bdf.firebaseapp.com",
-        databaseURL: "https://web-hw4-94bdf.firebaseio.com",
-        projectId: "web-hw4-94bdf",
-        storageBucket: "",
-        messagingSenderId: "125611020423",
-        appId: "1:125611020423:web:40fe186330f2f934"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    // const firebaseConfig = {
+    //     apiKey: "AIzaSyBNjPHaWRz4JKP1ILu0W5ytx2SNSDaDrTo",
+    //     authDomain: "web-hw4-94bdf.firebaseapp.com",
+    //     databaseURL: "https://web-hw4-94bdf.firebaseio.com",
+    //     projectId: "web-hw4-94bdf",
+    //     storageBucket: "",
+    //     messagingSenderId: "125611020423",
+    //     appId: "1:125611020423:web:40fe186330f2f934"
+    // };
+    // // Initialize Firebase
+    // firebase.initializeApp(firebaseConfig);
     var state = "login";
     
     $("#btnSignUp").click(function(){
         if(state === "login"){
-            $(this).text("Want to Login?");
+            $(this).text("want to login?");
             state = "signup";
         } else{
-            $(this).text("Want to Sign Up?");
+            $(this).text("want to signup?");
             state = "login";
         }
         $("#btnLogin").text(state);
@@ -66,6 +66,7 @@ $(document).ready(function(){
             var providerData = user.providerData;
             localStorage['user'] = user;
             location.href = "page1.html";
+            window.location = 'page2.html';
         } else {
             // User is signed out.
             // ...
