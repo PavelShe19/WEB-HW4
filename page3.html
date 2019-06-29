@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Vaction With Weather</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='page3.css'>
 </head>
 
 <body>
+    <div class="userProfile">
+        <div class="imgcontainer">
+            <img src="empty_profile_img.jpg" class="img.avatar boxed" id="usrImage">
+        </div>
+        <div id="email" class="boxed emailAdd">
+            N/A
+        </div>
+        <button id="btnLogout" type="submit" class="btn btn-action">
+            logout
+        </button>
+    </div>
     <div>
         WEATHER! VACATION!
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
+    <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyBNjPHaWRz4JKP1ILu0W5ytx2SNSDaDrTo",
+                authDomain: "web-hw4-94bdf.firebaseapp.com",
+                databaseURL: "https://web-hw4-94bdf.firebaseio.com",
+                projectId: "web-hw4-94bdf",
+                storageBucket: "web-hw4-94bdf.appspot.com",
+                messagingSenderId: "125611020423",
+                appId: "1:125611020423:web:40fe186330f2f934"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
 </body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src='page3.js'></script>
+<script>run();</script>
 </html>
