@@ -1,0 +1,52 @@
+.mainContainer {
+    text-align: center;
+    border-top: 400px;
+}
+/* Set a style for all buttons */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 12%;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 12%;
+}
+
+btn:hover {
+    opacity: 0.8;   
+}
+
+.boxed {
+    border: 1px solid green ;
+} 
+
+.emailAdd {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
+}
+
+.loadimg {
+    width: 320px;
+    padding: 10px;
+}

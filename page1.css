@@ -32,7 +32,7 @@ input[type=email], input[type=password] {
 }
 
 /* Add a hover effect for buttons */
-button:hover {
+btn:hover {
   opacity: 0.8;
 }
 

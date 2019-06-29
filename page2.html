@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Logged In</title>
+    <title>Vaction With Weather - Logged in - Image upload</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='page2.css'>
-    <script src='page2.js'></script>
+    
 </head>
+
 <body>
-    <div>
-        YOU ARE LOGGED IN
+    <div class="mainContainer">
+        <div class="imgcontainer">
+            <img src="empty_profile_img.jpg" class="img.avatar boxed" id="usrImage">
+        </div>
+        <div id="filesubmit">
+            <input id="uploader" type="file" class="file-select btn loadimg" accept="image/*" />
+            <button id="fileButton" class="file-submit btn">SUBMIT</button>
+        </div>
+        <div id="email" class="boxed emailAdd">
+            N/A
+        </div>
+        <button id="btnLogout" type="submit" class="btn btn-action">
+            logout
+        </button>
+        <button id="btnCont" type="submit" class="btn btn-action">
+            Continue
+        </button>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
+    <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyBNjPHaWRz4JKP1ILu0W5ytx2SNSDaDrTo",
+                authDomain: "web-hw4-94bdf.firebaseapp.com",
+                databaseURL: "https://web-hw4-94bdf.firebaseio.com",
+                projectId: "web-hw4-94bdf",
+                storageBucket: "web-hw4-94bdf.appspot.com",
+                messagingSenderId: "125611020423",
+                appId: "1:125611020423:web:40fe186330f2f934"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src='page2.js'></script>
+<script>run();</script>
+
 </html>
