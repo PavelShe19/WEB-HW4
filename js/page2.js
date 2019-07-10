@@ -4,6 +4,7 @@ function run() {
             if (user) {
                 var displayName = user.displayName;
                 var email = user.email;
+                
                 var emailVerified = user.emailVerified;
                 var photoURL = user.photoURL;
                 var isAnonymous = user.isAnonymous;
